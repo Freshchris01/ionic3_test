@@ -53,7 +53,7 @@ module.exports = function (config) {
 		port: 9876,
 		colors: true,
 		logLevel: config.LOG_INFO,
-		autoWatch: true,
+		autoWatch: false,
 		browsers: ['Chrome', 'ChromeHeadless', 'ChromeHeadlessNoSandbox'],
 
 		// you can define custom flags
@@ -63,7 +63,7 @@ module.exports = function (config) {
 				flags: ['--no-sandbox']
 			}
 		},
-		singleRun: false
+		singleRun: true
 	};
 
 	config.set(_config);
