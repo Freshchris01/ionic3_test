@@ -1,3 +1,6 @@
+sudo: required
+addons:
+  chrome: stable
 before_deploy: git config --global user.email publish@travis.github && git config --global user.name "Freshchris01"
 language: node_js
 node_js:
